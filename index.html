@@ -95,7 +95,7 @@
 
       /**/
       function loadMap() {
-        var zoom = 16;
+        var zoom = 14;
 
         var map = new OpenLayers.Map("mapdiv");
 
@@ -136,7 +136,7 @@
                   addCircle(
                       vectorLayer,
                       t(ll(coord)),
-                      2000);
+                      (response[i]["radius"] * 1));
                 } else if (response[i]["type"] === "commute") {
                   // daily commute
                   var commuteCircle = addCircle(
