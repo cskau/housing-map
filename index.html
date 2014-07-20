@@ -136,7 +136,7 @@
                   addCircle(
                       vectorLayer,
                       t(ll(coord)),
-                      (response[i]["radius"] * 1));
+                      Math.pow(response[i]["radius"], 1.15));
                 } else if (response[i]["type"] === "commute") {
                   // daily commute
                   var commuteCircle = addCircle(
